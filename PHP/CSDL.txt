@@ -1,0 +1,11 @@
+﻿//tạo csdl mysql có tên là db_android
+//chỉnh sửa lại đường dẫn trong các file LoginActivity và RegisterActivity thành iptrong máy mình
+
+CREATE TABLE `account`(
+    `user_id` INT PRIMARY KEY AUTO_INCREMENT,
+    `user_name` VARCHAR(50) NOT NULL,
+    `password` VARCHAR(50) NOT NULL,
+    `email` VARCHAR(100) NOT NULL,
+    UNIQUE (user_name)
+);
+
